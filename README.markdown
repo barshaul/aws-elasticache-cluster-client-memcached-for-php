@@ -1,6 +1,6 @@
 # Amazon ElastiCache Cluster Client
 
-Amazon ElastiCache Cluster Client is used to connect to ElastiCache for Memcached clusters. This client supports auto-discovery capabilities which allow you to easily manage your Memcached cluster configuration. This extension uses Amazon ElastiCache fork of libmemcached library to provide API for communicating with ElastiCache servers. Our changes are based on open-source memcached extension v.2.1.0 from https://github.com/php-memcached-dev/php-memcached. This code branch is compatible with PHP 7.0 - 8.1. Other PHP versions (including PHP 5.x) are not supported.
+Amazon ElastiCache Cluster Client is used to connect to ElastiCache for Memcached clusters. This client supports auto-discovery capabilities which allow you to easily manage your Memcached cluster configuration. This extension uses Amazon ElastiCache fork of libmemcached library to provide API for communicating with ElastiCache servers. Our changes are based on open-source memcached extension v.2.1.0 from https://github.com/php-memcached-dev/php-memcached. This code branch is compatible with PHP 7.0 - 8.4. Other PHP versions (including PHP 5.x) are not supported.
 
 This client library is released under the [Apache 2.0 License](http://aws.amazon.com/apache-2-0/).
 
@@ -17,11 +17,11 @@ b) Run the following commands
 
 > sudo apt-get install gcc g++ make zlib1g zlib1g-dev
 
-c) Install PHP between versions 7.0 and 8.1
+c) Install PHP between versions 7.0 and 8.4
 
-Installation instructions for PHP 8.1:
+Installation instructions for PHP 8.4:
 
-> sudo apt install php8.1-cli php8.1-dev
+> sudo apt install php8.4-cli php8.4-dev
  
 Installation instructions for PHP 7.4:
 
@@ -66,7 +66,7 @@ b) Run the following command
 
 > sudo yum install gcc-c++ zlib-devel
 
-c) Install PHP between versions 7.0 and 8.1
+c) Install PHP between versions 7.0 and 8.4
 Installation instruction using amazon-linux-extras to install php7.4:
 
 > which amazon-linux-extras
@@ -129,7 +129,7 @@ b) Run the following command
 
 > sudo zypper install gcc
 
-c) Install PHP between versions 7.0 and 8.1
+c) Install PHP between versions 7.0 and 8.4
 Installation instructions for php 7.x:
 
 > sudo zypper addrepo http://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_15.3/ php
@@ -150,7 +150,7 @@ f) Insert the line "extension=amazon-elasticache-cluster-client.so" into file /e
 - 
 ### Compile the library
 
-a) Launch a Linux-based EC2 instance and Install PHP between versions 7.0 and 8.1 along with its required dependencies.
+a) Launch a Linux-based EC2 instance and Install PHP between versions 7.0 and 8.4 along with its required dependencies.
 
 b) Checkout and compile the dependency package aws-elasticache-cluster-client-libmemcached via https://github.com/awslabs/aws-elasticache-cluster-client-libmemcached
 
@@ -194,7 +194,7 @@ Dependencies
 ------------
 
 php-memcached 3.x:
-* Supports PHP 7.0 - 8.1.
+* Supports PHP 7.0 - 8.4.
 * Requires libmemcached 1.x or higher.
 * Optionally supports igbinary 2.0 or higher.
 * Optionally supports msgpack 2.0 or higher.
